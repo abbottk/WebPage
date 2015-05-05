@@ -23,12 +23,13 @@ priority "/index.html" = 1.0
 priority "/legal.html" = 0.1
 priority url
   | isPrefixOf "/projects/" url          = 0.7
-  | isPrefixOf "/teachingAssistant/" url = 0.3
+  | isPrefixOf "/teaching/" url          = 0.3
+  | isPrefixOf "/teachingAssistant/" url = 0.4
   | otherwise                            = 0.5
 
 -- | Matches all pages to include.
 allPages :: Compiler [Item String]
-allPages = loadAll ("pages/*" .||. "projects/*" .||. "teachingAssistant/**")
+allPages = loadAll ("pages/*" .||. "projects/*" .||. "teaching/**" .||. "teachingAssistant/**")
 
 -- | Matches all files to include.
 allFiles :: Compiler [Item CopyFile]
