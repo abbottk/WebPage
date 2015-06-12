@@ -6,7 +6,7 @@ title: Teaching Assistant
 
 ## Current
 
-* \$teaching-assistant-current\$
+<!-- * \$teaching-assistant-current\$ -->
 
 ## Past Courses
 
