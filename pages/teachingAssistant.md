@@ -4,9 +4,9 @@ title: Teaching Assistant
 
 # Teaching Assistant
 
-## Current
+[comment]: <> (## Current)
 
-<!-- * \$teaching-assistant-current\$ -->
+[comment]: <> (* \$teaching-assistant-current\$)
 
 ## Past Courses
 
