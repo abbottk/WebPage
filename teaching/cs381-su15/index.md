@@ -61,6 +61,11 @@ Slides and code examples from the lectures will be posted below. Slides will nor
   <td class="slides-title">[Haskell](lecture_slides/1_haskell.pdf)</td>
   <td class="slides-files">[Basics.hs](code/Basics.hs), [InfList.hs](code/InfList.hs), [Shape.hs](code/Shape.hs)</td>
 </tr>
+<tr>
+  <td class="slides-date">Jun 29</td>
+  <td class="slides-title">[Syntax](lecture_slides/2_syntax.pdf)</td>
+  <td class="slides-files"></td>
+</tr>
 </tbody>
 </table>
 
