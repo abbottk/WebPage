@@ -64,7 +64,7 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <tr>
   <td class="slides-date">Jun 29</td>
   <td class="slides-title">[Syntax](lecture_slides/2_syntax.pdf)</td>
-  <td class="slides-files"></td>
+  <td class="slides-files">[StackLang.hs](code/StackLang.hs)</td>
 </tr>
 </tbody>
 </table>
@@ -162,6 +162,12 @@ In addition to the graded homework assignments and the ungraded exercises provid
 
 ### Prolog
 
-Later in the course we will be using the logic programming language [Prolog](https://en.wikipedia.org/wiki/Prolog). I'll post more resources when we get there.
+In the last couple weeks of the course, we will use the logic programming language [Prolog](https://en.wikipedia.org/wiki/Prolog). As with Haskell, I strongly recommend you supplement the course material with reading and exercises outside of class.
 
   * [SWI-Prolog](http://www.swi-prolog.org/download/stable) -– The Prolog environment we’ll be using. I’ll assume you have this installed.
+
+  * [Learn Prolog Now!](http://www.learnprolognow.org) -- This book provides a good introduction to Prolog and plenty of exercises for practice. Available for free online.
+
+  * [An Introduction to Logic Programming through Prolog](https://spivey.oriel.ox.ac.uk/corner/Logic_Programming) -- A free older textbook based on Prolog. I haven’t read this one but it looks like a pretty good resource.
+
+  * [Prolog Wikibook](https://en.wikibooks.org/wiki/Prolog) -- Another one I haven’t read, but looks like a pretty good resource.

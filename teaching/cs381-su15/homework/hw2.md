@@ -6,9 +6,11 @@ title: CS 381 -- Homework #2
 
 **Due: Thurs, Jul 2, 3:59pm**
 
+<div class="bold-code">
+
 ## How to Submit
 
-You should produce a single file, named `HW2.hs`. This file *must compile without errors* in GHCi. Put all non-working parts of your solution in comments! If your file does not compile, **it will not be evaluated**.
+You should produce a single file, named `HW2.<your-username>.hs`. This file *must compile without errors* in GHCi. Put all non-working parts of your solution in comments! If your file does not compile, **it will not be evaluated**.
 
 You must submit:
 
