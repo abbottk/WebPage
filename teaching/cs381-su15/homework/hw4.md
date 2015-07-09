@@ -37,9 +37,9 @@ Please preserve the existing `doctest` comments in the template (the lines that 
 
 **Partial credit**: if you can't solve a problem, you can get partial credit by describing in comments what you attempted to do, where you got stuck, and what you believe your next step might be.
 
-## Description
+## Description{#description}
 
-Template: **[HW4.hs](../code/HW4.hs)**{#template}
+Template: **[HW4.hs](../code/HW4.hs)**
 
 ### Exercise 1: A Stack Language{#exercise1}
 
@@ -126,7 +126,7 @@ The additional commands modify the stack in the following ways.
 
 ### Exercise 3: MiniLogo
 
-Consider the simplified version of MiniLogo (without macros), defined by the following abstract syntax. **To test your semantics you can use the `ppLines` function defined in** [HW4.hs](#template).
+Consider the simplified version of MiniLogo (without macros), defined by the following abstract syntax. **To test your semantics you can use the `ppLines` function defined in HW4.hs under the [descrition](#description)**.
 
 ~~~
 data Cmd = Pen Mode
