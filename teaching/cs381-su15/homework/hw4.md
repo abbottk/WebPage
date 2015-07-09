@@ -39,7 +39,7 @@ Please preserve the existing `doctest` comments in the template (the lines that 
 
 ## Description
 
-Template: **[HW4.hs](../code/HW4.hs)**
+Template: **[HW4.hs](../code/HW4.hs)**{#template}
 
 ### Exercise 1: A Stack Language{#exercise1}
 
@@ -126,7 +126,7 @@ The additional commands modify the stack in the following ways.
 
 ### Exercise 3: MiniLogo
 
-Consider the simplified version of MiniLogo (without macros), defined by the following abstract syntax.
+Consider the simplified version of MiniLogo (without macros), defined by the following abstract syntax. **To test your semantics you can use the `ppLines` function defined in** [HW4.hs](#template).
 
 ~~~
 data Cmd = Pen Mode
@@ -157,7 +157,7 @@ type Lines = [Line]
 >semS :: Cmd -> State -> (State,Lines)
 >~~~
 
-2. Define the semantic function `sem'`, which calls `semS` with an initial state having the pen `Up` and the current position at `(0,0)`. `sem'` should have the following type.
+2. Define the semantic function `sem'`, which calls `semS`. The initial state is defined as having the pen `Up` and the current drawing position at `(0,0)`.
 
 >~~~
 >sem' :: Cmd -> Lines
