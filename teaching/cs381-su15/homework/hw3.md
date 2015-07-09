@@ -76,9 +76,9 @@ The syntax of the MiniLogo language is defined by the following grammar:
  
   *pos*  ::=   *num*   |   *name*
  
- *pars*  ::=   *name*, *pars*   |   *name*
+ *pars*  ::=   *name*; *pars*   |   ε
  
- *vals*  ::=   *num*, *vals*   |   *num*
+ *vals*  ::=   *num*; *vals*   |   ε
 ------- -----  -------------------------------------------------
 </div>
 

@@ -42,7 +42,7 @@ The syllabus for the course is linked below. It includes the course learning obj
 
 ## Slides and Code Examples {#slides}
 
-Slides and code examples from the lectures will be posted below. Slides will normally be posted just before class, and files just after. I will continue to update the slides for each stage of the course until we are done with that stage.
+Slides and code examples from the lectures will be posted below. Slides will normally be posted just before class, and completed files just after. I will continue to update the slides for each stage of the course until we are done with that stage.
 
 <table class="slides">
 <tbody>
@@ -64,8 +64,12 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <tr>
   <td class="slides-date">Jun 29</td>
   <td class="slides-title">[Syntax](lecture_slides/2_syntax.pdf)</td>
-  <td class="slides-files">[StackLang.hs](code/StackLang.hs)</td>
+  <td class="slides-files">[StackLang.hs](code/StackLang.hs), [Let.hs](code/Let.hs)</td>
 </tr>
+<tr>
+  <td class="slides-date">Jul 6</td>
+  <td class="slides-title">[Semantics](lecture_slides/3_semantics.pdf)</td>
+  <td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs), [RegCalc.hs](code/RegCalc.hs), [LetSem.hs](code/LetSem.hs)</td>
 </tbody>
 </table>
 
@@ -77,6 +81,8 @@ Note that due to logistical issues **late homework will not be accepted**. Pleas
 
  * [Homework #1](homework/hw1.html) --- due: June 26, 11:59pm
  * [Homework #2](homework/hw2.html) --- due: July 2, 3:59pm
+ * [Homework #3](homework/hw3.html) --- due: July 9, 3:59pm
+ * [Homework #4](homework/hw4.html) --- due: July 16, 3:59pm
 
 ## Use of Piazza {#piazza}
 
