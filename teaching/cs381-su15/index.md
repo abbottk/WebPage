@@ -71,11 +71,6 @@ Slides and code examples from the lectures will be posted below. Slides will nor
   <td class="slides-title">[Semantics](lecture_slides/3_semantics.pdf)</td>
   <td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs), [RegCalc.hs](code/RegCalc.hs), [LetSem.hs](code/LetSem.hs)</td>
 </tr>
-<tr>
-  <td class="slides-date">Jul 13</td>
-  <td class="slides-title">[Types](lecture_slides/4_types.pdf)</td>
-  <td class="slides-files"></td>
-</tr>
 </tbody>
 </table>
 
