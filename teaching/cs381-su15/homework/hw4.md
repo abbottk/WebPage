@@ -43,16 +43,6 @@ Template: **[HW4.hs](../code/HW4.hs)**
 
 ### Exercise 1: A Stack Language{#exercise1}
 
-Consider the stack language *s* defined by the following grammar.
-
-<div class="center grammar">
-------- -----  ---------------------------------------------------------------
-    *s*  ::=   *c*   |   *c*; *s*
- 
-    *c*  ::=   push *int*   |   pop   |   add   |   mult   |   dup   |   swap
-------- -----  ---------------------------------------------------------------
-</div>
-
 In this assignment you will be implementing a stack language. The grammar for the language is defined by the following Haskell type definitions.
 
 ~~~
@@ -60,7 +50,6 @@ type Prog = [Cmd]
 data Cmd = Push Int
          | Pop
          | Add
-         | Mult
          | Dup
          | Swap
 ~~~
@@ -70,7 +59,6 @@ A program in this language manipulates an implicit stack of integers. A program 
  * `Push i` -- pushes the integer `i` onto the stack
  * `Pop` -- removes the topmost value from the stack
  * `Add` -- adds the two topmost values on the stack, popping the arguments and pushing their sum
- * `Mult` -- multiples the two topmost values on the stack, popping the arguments and pushing their prodcut
  * `Dup` -- makes a copy of the topmost value on the stack, and pushes the copy
  * `Swap` -- swaps the order of the two topmost values on the stack
 
@@ -84,54 +72,72 @@ type Stack = [Int]
 
 ### Tasks
 
-1. Define the semantics for the stack language as a Haskell function `sem` that yields the semantics of a program. Please note that the semantic domain has to be defined as a function domain (since the meaning of a stack program is a transformation of stacks) *and* as an error domain (since operations can fail). Therefore, `sem` has to have the following type -- where **you have to find an appropriate type definition to replace** `D`.
+1. Define the semantic function for the stack language as a Haskell function `prog` that yields the semantics of a program. Please note that the semantic domain has to be defined as a function domain (since the meaning of a stack program is a transformation of stacks) *and* as an error domain (since operations can fail).
 
->~~~
->sem :: Prog -> D
->~~~
+2. Define an auxiliary function `cmd` for the semantics of a command.
 
-2. Define an auxiliary function `semCmd` for the semantics of individual operations, which has the following type.
+3. Define a convenience function `run` for executing a program on an initially empty stack.
 
->~~~
->semCmd :: Cmd -> D
->~~~
+I have omitted the type definitions for each of these functions to encourage you to think closely about the semantic domains. Note that you must manage both an implicit state (the stack) and handle errors in case there are insufficient arguments on the stack to execute a command.
+
+However, you can also easily reverse engineer the types of these functions by examining the `doctest` comments. Make sure you start by writing the type of each function.
 
 ### Exercise 2: Extending the Stack Language by Macros
 
-Suppose we want to add a simple macro facility to the stack language that allows us to define parameterless macros like `sqr = dup; mult`. The definition *c* would change as follows.
+In this part you will extend the stack language with simple macro capabilities. In the template, I have already extended the syntax for you.
 
---- -----  -----------------------------------------------------------------------------------------------------------
-*c*  ::=   push *int*   |   pop   |   add   |   mult   |   dup   |   swap   |   def *string* (*s*)   |   call *string*
- 
---- -----  -----------------------------------------------------------------------------------------------------------
+~~~
+-- | A macro name.
+type Name = String
 
-The additional commands modify the stack in the following ways.
+-- | Extended version of Prog that supports macros.
+type XProg = [XCmd]
 
- * `Dup n s` -- defines a macro named `n` that is available in the rest of the program (when called, it executes the command stack `s`)
- * `Call n` -- calls the macro named `n` defined earlier in the program (if `n` is not defined `Call` yields an error)
+-- | Extended version of Cmd that supports macros.
+data XCmd = Define Name XProg
+          | Call Name
+          | Basic Cmd
+~~~
+
+An extended program of type `XProg` is just a list of extended commands of type `XCmd`. The extention adds two new commands:
+
+ * `Define m p` -- defines a macro named `m` that when called will execute `p`
+ * `Call n` -- invokes the macro named `m`
+
+The third constructor, `Basic`, is used to include the commands from the original stack language in the extended language. For example, a `Push 3` command is now represented as `Basic (Push 3)`. Some aliases are defined in the template to make working with basic commands in the extended language a bit easier. Using these, you can write simply `push 3` (note the lowercase “p”).
 
 ### Tasks
 
-1. Extend the abstract syntax to represent macro definitions and calls, that is give the corresponding Haskell data definition change for `Cmd`.
-
-2. Define a new `type State` to represent the state for the extended language. This new state includes the macro definitions and the stack. Please note that a macro definition can be represented by a pair whose first component is the macro name and the second component is the sequence of commands -- multiple macro definitions can be stored in a list having the following type.
+1. Define the semantic function for the extended stack language as a Haskell function `xprog` that yields the semantics of an extended program with the following type.
 
 >~~~
->type Macro = [(String,Prog)]
+>xprog :: XProg -> State -> Maybe State
 >~~~
 
-3. Define the semantics for the extended language as a function `sem2`.
+2. Define the semantic function for the extended stack language as a Haskell function `xcmd` that wields the semantics of an extended command with the following type.
 
-4. As in [Exercise 1](#exercise1), define an auxiliary function `semCmd2` for the semantics of indifidual operations.
+>~~~
+>xcmd :: XCmd -> State -> Maybe State
+>~~~
+
+3. Define a convenience function `xrun` for executing an extended program on an initially empty stack with the following type.
+
+>~~~
+>xrun :: XProg -> Maybe Stack
+>~~~
+
+I have provided the types of these functions in the template. Note that the program state now consists of: (1) the stack and (2) a list of macro definitions. The `Define` construct should add to the list of definitions and the `Call` construct should lookup definitions in this list. The function `lookup` in the Haskell Prelude will be useful here.
+
+As always, you’re encouraged to add more test cases to improve your test coverage. It will also help your understanding of the homework assignment (and be good practice for the midterm) to try writing and running some of your own stack language programs.
 
 ### Exercise 3: MiniLogo
 
-Consider the simplified version of MiniLogo (without macros), defined by the following abstract syntax. **To test your semantics you can use the `ppLines` function defined in HW4.hs under the [descrition](#description)**.
+Consider the simplified version of MiniLogo (without macros), defined by the following abstract syntax. **To test your semantics you can use the `ppLines` function defined in HW4.hs under the [description](#description)**.
 
 ~~~
-data Cmd = Pen Mode
-         | Move Int Int
-         | Seq Cmd Cmd
+data Cmd' = Pen Mode
+          | Move Int Int
+          | Seq Cmd' Cmd'
 
 data Mode = Up | Down
 ~~~
@@ -139,7 +145,7 @@ data Mode = Up | Down
 The semantics of a MiniLogo program is ultimately a set of drawn lines. However, for the definition of the semantics a "drawing state" must be maintained that keeps track of the current position of the pen and the pen's mode (`Up` or `Down`). This state should be represented by values of the following type.
 
 ~~~
-type State = (Mode,Int,Int)
+type State' = (Mode,Int,Int)
 ~~~
 
 The semantic domain representing a set of drawn lines is represented by the type `Lines`.
@@ -154,13 +160,13 @@ type Lines = [Line]
 1. Define the semantics of MiniLogo by giving two function definitions. First define a function `semS` that has the following type, which defines for each `Cmd` how it modifies the current drawing state -- as well as which lines are produced.
 
 >~~~
->semS :: Cmd -> State -> (State,Lines)
+>semS :: Cmd' -> State' -> (State',Lines)
 >~~~
 
 2. Define the semantic function `sem'`, which calls `semS`. The initial state is defined as having the pen `Up` and the current drawing position at `(0,0)`.
 
 >~~~
->sem' :: Cmd -> Lines
+>sem' :: Cmd' -> Lines
 >~~~
 
 <br>
