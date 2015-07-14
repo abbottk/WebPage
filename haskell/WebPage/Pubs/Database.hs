@@ -37,7 +37,7 @@ icfp   = short "ICFP" "ACM SIGPLAN Int. Conf. on Functional Programming"
 onward = short "Onward!" "ACM SIGPLAN Symp. on New Ideas in Programming and Reflections on Software"
 sle    = short "SLE" "Int. Conf. on Software Language Engineering"
 vlhcc  = short "VL/HCC" "IEEE Symposium on Visual Languages and Human-Centric Computing"
-vlhccgc | Just s <- _shortname vlhcc = short s ("Graduate Consortium at " ++ _longname vlhcc)
+vlhccgc | Just s <- _shortName vlhcc = short s ("Graduate Consortium at " ++ _longName vlhcc)
 
 
 -- ** Workshops
