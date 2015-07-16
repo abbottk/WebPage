@@ -74,7 +74,7 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <tr>
   <td class="slides-date">Jul 13</td>
   <td class="slides-title">[Types](lecture_slides/4_types.pdf)</td>
-  <td class="slides-files">[IntBoolT.hs](code/IntBoolT.hs), [PairT.hs](code/PairT.hs), [LetT.hs](code/LetT.hs)</td>
+  <td class="slides-files">[IntBoolT.hs](code/IntBoolT.hs), [PairT.hs](code/PairT.hs), [LetT.hs](code/LetT.hs), [StackT.hs](code/StackT.hs)</td>
 </tr>
 </tbody>
 </table>
