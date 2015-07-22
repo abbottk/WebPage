@@ -76,6 +76,10 @@ Slides and code examples from the lectures will be posted below. Slides will nor
   <td class="slides-title">[Types](lecture_slides/4_types.pdf)</td>
   <td class="slides-files">[IntBoolT.hs](code/IntBoolT.hs), [PairT.hs](code/PairT.hs), [LetT.hs](code/LetT.hs), [StackT.hs](code/StackT.hs)</td>
 </tr>
+<tr>
+  <td class="slides-date">Jul 20</td>
+  <td class="slides-title">[Scope and Parameters](lecture_slides/5_scopeParameters.pdf)</td>
+  <td class="slides-files">[Scope.hs](code/Scope.hs)</td>
 </tbody>
 </table>
 
