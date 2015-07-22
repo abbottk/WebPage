@@ -10,21 +10,18 @@ import WebPage.Pubs.Paper
 --
 
 -- ** Authors
-abbott      = Author "Keeley" "Abbott"
 walkingshaw = Author "Eric" "Walkingshaw"
+abbott      = Author "Keeley" "Abbott"
 bogart      = Author "Christopher" "Bogart"
-
 
 -- ** Institutions
 osu = "Oregon State University"
-
 
 -- ** Journals
 jfp    = short "JFP" "Journal of Functional Programming"
 jvlc   = short "JVLC" "Journal of Visual Languages and Computing"
 toplas = short "TOPLAS" "ACM Trans. on Programming Languages and Systems"
 tosem  = short "TOSEM" "ACM Trans. on Software Engineering and Methodology"
-
 
 -- ** Conferences
 lncs = ("LNCS",)
@@ -36,9 +33,9 @@ gttse  = short "GTTSE" "Generative and Transformational Techniques in Software E
 icfp   = short "ICFP" "ACM SIGPLAN Int. Conf. on Functional Programming"
 onward = short "Onward!" "ACM SIGPLAN Symp. on New Ideas in Programming and Reflections on Software"
 sle    = short "SLE" "Int. Conf. on Software Language Engineering"
-vlhcc  = short "VL/HCC" "IEEE Symposium on Visual Languages and Human-Centric Computing"
-vlhccgc | Just s <- _shortName vlhcc = short s ("Graduate Consortium at " ++ _longName vlhcc)
-
+vlhcc  = short "VL/HCC" "IEEE Int. Symp. on Visual Languages and Human-Centric Computing"
+vlhccdc | Just s <- _shortName vlhcc = short s ("Doctoral Consortium at " ++ _longName vlhcc)
+vlhccgc | Just s <- _shortName vlhcc = short s ("Graduate Consortium at " ++ _lingName vlhcc)
 
 -- ** Workshops
 fosd  = short "FOSD" "Int. Workshop on Feature-Oriented Software Development"
@@ -61,8 +58,9 @@ allPubs = concat [drafts,y15]
 -- ** 2015
 
 vlhcc15 = accepted Conference
-  "programs-for-people"
+  "vlhcc15-programs-for-people"
   [abbott,bogart,walkingshaw]
   "Programs for People: What We Can Learn from Lab Protocols"
   2015
+  `setDataLink` "https://github.com/lambda-land/ProtocolStudy-Data"
   @@ vlhcc
