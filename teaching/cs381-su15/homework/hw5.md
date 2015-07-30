@@ -41,7 +41,7 @@ Please preserve the existing `doctest` comments in the template (the lines that 
 
 Template: **[HW5.hs](../code/HW5.hs)**
 
-### Exercise 1: A Rank-Based Type System for the Stack Language{#exercise1}
+### Exercise 1: A Rank-Based Type System for the Stack Language
 
 In this assignment we will be extending the stack language from [Homework #4](../hw4.html). The grammar for the language is defined by the following Haskell type definitions.
 
@@ -75,7 +75,7 @@ type CmdRank = (Int,Int)
 
 1. Define a function `rankC` that maps each stack operation to its rank.
 
-2. Define a auxiliary function `rankP` that computes the rank of a program. The `Maybe` data type is used to capture rank errors (e.g. a program containing a rank error should be mapped to `Nothing`, whereas a program with no rank error should be wrapped by `Just`). *Hint*: you may need to define an auxiliary function `rank :: Prog -> Rank -> Maybe Rank` and define `rankP` using `rank`.
+2. Define an auxiliary function `rankP` that computes the rank of a program. The `Maybe` data type is used to capture rank errors (e.g. a program containing a rank error should be mapped to `Nothing`, whereas a program with no rank error should be wrapped by `Just`). *Hint*: you may need to define an auxiliary function `rank :: Prog -> Rank -> Maybe Rank` and define `rankP` using `rank`.
 
 3. Define a function `semStatTC` for evaluating stack programs that first calls the function `rankP` to check wheter the stack program is type correct and evaluates the program only in that case. For performing the actual evaluation `semStatTC` calls the function `prog`.
 
@@ -85,7 +85,7 @@ Note that the function `prog` called by `semStatTC` can be simplified (both its 
 
 1. Provide the new type of the function `prog'` and explain why the function can be simplied to have this type (use comments for your explanation).
 
-2. Redefine the `prog'` function using this new type (comment out the previous function definition).
+2. Redefine the `prog'` function using this new type.
 
 ### Exercise 2: Runtime Stack
 

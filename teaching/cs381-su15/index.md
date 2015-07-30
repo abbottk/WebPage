@@ -99,6 +99,7 @@ Note that due to logistical issues **late homework will not be accepted**. Pleas
  * [Homework #2](homework/hw2.html) --- due: July 2, 3:59pm
  * [Homework #3](homework/hw3.html) --- due: July 9, 3:59pm
  * [Homework #4](homework/hw4.html) --- due: July 16, 3:59pm
+ * [Homework #5](homework/hw5.html) --- due: August 6, 3:59pm
 
 ## Use of Piazza {#piazza}
 
