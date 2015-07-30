@@ -2,7 +2,7 @@
 title: Links
 ---
 
-I have accounts through the following (though I don't always update them as necessary):
+I have accounts through the following (may not have complete up-to-date information):
 
 * [GitHub][GitHub]
 * [Google+][Google+]

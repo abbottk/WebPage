@@ -15,7 +15,7 @@ td {
 -------------  ----------------------------------------------------------------
 Instructor:    <span class="my-name">Keeley Abbott</span> (<span class="osu-email"></span>)
 Lectures:      M--F, 4:00--4:50pm, Kelley Engineering Center 1003 ([map](http://oregonstate.edu/campusmap/?locations=870))
-Piazza:        [CS 381 on Piazza](https://piazza.com/oregonstate/summer2015/cs381/home) (see [note on Piazza](#piazza) below)
+Piazza:        [CS 381 on Piazza](https://piazza.com/oregonstate/summer2015/cs381) (see [note on Piazza](#piazza) below)
 -------------  ----------------------------------------------------------------
 
 <div class="no-print">
@@ -47,39 +47,45 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <table class="slides">
 <tbody>
 <tr>
-  <th class="slides-date"></th>
-  <th class="slides-title">Slides</th>
-  <th class="slides-files">Additional Files</th>
+<th class="slides-date"></th>
+<th class="slides-title">Slides</th>
+<th class="slides-files">Additional Files</th>
 </tr>
 <tr>
-  <td class="slides-date">Jun 22</td>
-  <td class="slides-title">[Course Introduction](lecture_slides/0_introduction.pdf)</td>
-  <td></td>
+<td class="slides-date">Jun 22</td>
+<td class="slides-title">[Course Introduction](lecture_slides/0_introduction.pdf)</td>
+<td></td>
 </tr>
 <tr>
-  <td class="slides-date">Jun 23</td>
-  <td class="slides-title">[Haskell](lecture_slides/1_haskell.pdf)</td>
-  <td class="slides-files">[Basics.hs](code/Basics.hs), [InfList.hs](code/InfList.hs), [Shape.hs](code/Shape.hs)</td>
+<td class="slides-date">Jun 23</td>
+<td class="slides-title">[Haskell](lecture_slides/1_haskell.pdf)</td>
+<td class="slides-files">[Basics.hs](code/Basics.hs), [InfList.hs](code/InfList.hs), [Shape.hs](code/Shape.hs)</td>
 </tr>
 <tr>
-  <td class="slides-date">Jun 29</td>
-  <td class="slides-title">[Syntax](lecture_slides/2_syntax.pdf)</td>
-  <td class="slides-files">[StackLang.hs](code/StackLang.hs), [Let.hs](code/Let.hs)</td>
+<td class="slides-date">Jun 29</td>
+<td class="slides-title">[Syntax](lecture_slides/2_syntax.pdf)</td>
+<td class="slides-files">[StackLang.hs](code/StackLang.hs), [Let.hs](code/Let.hs)</td>
 </tr>
 <tr>
-  <td class="slides-date">Jul 6</td>
-  <td class="slides-title">[Semantics](lecture_slides/3_semantics.pdf)</td>
-  <td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs), [RegCalc.hs](code/RegCalc.hs), [LetSem.hs](code/LetSem.hs), [ShapeSem.hs](code/ShapeSem.hs)</td>
+<td class="slides-date">Jul 6</td>
+<td class="slides-title">[Semantics](lecture_slides/3_semantics.pdf)</td>
+<td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs), [RegCalc.hs](code/RegCalc.hs), [LetSem.hs](code/LetSem.hs), [ShapeSem.hs](code/ShapeSem.hs)</td>
 </tr>
 <tr>
-  <td class="slides-date">Jul 13</td>
-  <td class="slides-title">[Types](lecture_slides/4_types.pdf)</td>
-  <td class="slides-files">[IntBoolT.hs](code/IntBoolT.hs), [PairT.hs](code/PairT.hs), [LetT.hs](code/LetT.hs), [StackT.hs](code/StackT.hs)</td>
+<td class="slides-date">Jul 13</td>
+<td class="slides-title">[Types](lecture_slides/4_types.pdf)</td>
+<td class="slides-files">[IntBoolT.hs](code/IntBoolT.hs), [PairT.hs](code/PairT.hs), [LetT.hs](code/LetT.hs), [StackT.hs](code/StackT.hs)</td>
 </tr>
 <tr>
-  <td class="slides-date">Jul 20</td>
-  <td class="slides-title">[Scope and Parameters](lecture_slides/5_scopeParameters.pdf)</td>
-  <td class="slides-files">[Scope.hs](code/Scope.hs)</td>
+<td class="slides-date">Jul 20</td>
+<td class="slides-title">[Scope and Parameters](lecture_slides/5_scopeParameters.pdf)</td>
+<td class="slides-files">[Scope.hs](code/Scope.hs)</td>
+</tr>
+<tr>
+<td class="slides-date">Jul 29</td>
+<td class="slides-title">[Logic Programming](lecture_slides/6_logicProgramming.pdf)</td>
+<td class="slides-files">[Imp.hs](code/Imp.hs), [Obj.hs](code/Obj.hs), [STrace.hs](code/STrace.hs)</td>
+</tr>
 </tbody>
 </table>
 
@@ -109,7 +115,7 @@ As a little external incentive, a few points of *extra credit* will be awarded a
 ## Office Hours {#hours}
 
 ---  --------------------  ----------  ----------------------------------------
-Mon  11:30am -- 4:00pm     KEC 1107    Keeley
+Mon  11:30am -- 12:30pm     KEC 1107    Keeley
 Thr  3:00 -- 4:00pm        KEC 1107    Keeley
 ---  --------------------  ----------  ----------------------------------------
 
