@@ -43,7 +43,7 @@ Template: **[HW5.hs](../code/HW5.hs)**
 
 ### Exercise 1: A Rank-Based Type System for the Stack Language
 
-In this assignment we will be extending the stack language from [Homework #4](homework/hw4.html). The grammar for the language is defined by the following Haskell type definitions.
+In this assignment we will be extending the stack language from [Homework #4](hw4.html). The grammar for the language is defined by the following Haskell type definitions.
 
 ~~~
 type Prog = [Cmd]
@@ -56,7 +56,7 @@ data Cmd = Push Int
          | Swap
 ~~~
 
-This stack also manipulates an implicit stack of integers. A program is a sequence of commands, where each command modifies the stack (descriptions of the previously defined operations can be found in [Homework #4](homework/hw4.html)).
+This stack also manipulates an implicit stack of integers. A program is a sequence of commands, where each command modifies the stack (descriptions of the previously defined operations can be found in [Homework #4](hw4.html)).
 
  * `Pop k` -- removes `k` elements from the stack
  * `Mul` -- multiplies the two topmost values on the stack, popping the arguments and pushing their product
