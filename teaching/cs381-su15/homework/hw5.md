@@ -62,7 +62,7 @@ This stack also manipulates an implicit stack of integers. A program is a sequen
  * `Mul` -- multiplies the two topmost values on the stack, popping the arguments and pushing their product
  * `Inc` -- increments the topmost element (e.g. adds one) on the stack
 
-The rank of a stack is given by the number of its elements. The rank of a single stack operation is given by a pair of numbers `(n.m)` where `n` indicates the number of elements the operation takes from the top of the stack and `m` is the number of elements the operation buts onto the stack. The rank for a stack program is defined to be the rank of the stack that would be obtained if the program were run on an empty stack. A *rank error* occurs in a stack program when an operation with rank `(n.m)` is executed on a stack with rank `k < n`. In other words, a rank error indicates a stack underflow.
+The rank of a stack is given by the number of its elements. The rank of a single stack operation is given by a pair of numbers `(n,m)` where `n` indicates the number of elements the operation takes from the top of the stack and `m` is the number of elements the operation pushes onto the stack. The rank for a stack program is defined to be the rank of the stack that would be obtained if the program were run on an empty stack. A *rank error* occurs in a stack program when an operation with rank `(n,m)` is executed on a stack with rank `k < n`. In other words, a rank error indicates a stack underflow.
 
 Use the following types to represent stack and operation ranks.
 
