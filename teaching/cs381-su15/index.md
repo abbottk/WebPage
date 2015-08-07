@@ -84,7 +84,7 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <tr>
 <td class="slides-date">Jul 29</td>
 <td class="slides-title">[Logic Programming](lecture_slides/6_logicProgramming.pdf)</td>
-<td class="slides-files">[Imp.hs](code/Imp.hs), [Obj.hs](code/Obj.hs), [STrace.hs](code/STrace.hs)</td>
+<td class="slides-files">[Imp.hs](code/Imp.hs), [Obj.hs](code/Obj.hs), [STrace.hs](code/STrace.hs), [hobbits.pl](code/hobbits.pl), [griffins.pl](code/griffins.pl)</td>
 </tr>
 </tbody>
 </table>
