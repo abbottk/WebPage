@@ -10,6 +10,7 @@ title: Teaching Assistant
 
 ## Past Courses
 
-* Spring 2015 -- [CS 381: Programming Language Fundamentals](http://web.engr.oregonstate.edu/~walkiner/teaching/cs381-sp15/)
-* Winter 2015 -- **CS 381: Programming Language**
+* Fall 2015 -- **CS589: Programming Languages I**
+* Spring 2015 -- **CS 381: Programming Language Fundamentals**
+* Winter 2015 -- **CS 381: Programming Language Fundamentals**
 * Fall 2014 -- **CS 361: Software Engineering I**

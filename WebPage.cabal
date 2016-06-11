@@ -5,7 +5,7 @@ homepage:       http://web.engr.oregonstate.edu/~abbottk/
 license:        OtherLicense
 license-file:   LICENSE
 author:         Keeley Abbott
-maintainer:     abbottk@onid.oregonstate.edu
+maintainer:     abbottk@oregonstate.edu
 category:       Web
 build-type:     Simple
 cabal-version:  >= 1.8
