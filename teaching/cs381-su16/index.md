@@ -60,6 +60,21 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <td class="slides-title">[Course Introduction](lecture_slides/0_introduction.pdf)</td>
 <td></td>
 </tr>
+<tr>
+<td class="slides-date">Jun 21</td>
+<td class="slides-title">[Haskell](lecture_slides/1_haskell.pdf)</td>
+<td class="slides-files">[Basics.hs](code/Basics.hs), [InfList.hs](code/InfList.hs), [Shape.hs](code/Shape.hs)</td>
+</tr>
+<tr>
+<td class="slides-date">Jun 23</td>
+<td class="slides-title">[Syntax](lecture_slides/2_syntax.pdf)</td>
+<td class="slides-files">[StackLang.hs](code/StackLang.hs), [Let.hs](code/Let.hs), [BoolSyn.hs](code/BoolSyn.hs), [BoolPP.hs](code/BoolPP.hs), [Stmt.hs](code/Stmt.hs)</td>
+</tr>
+<tr>
+<td class="slides-date">Jun 28</td>
+<td class="slides-title">[Semantics](lecture_slides/3_semantics.pdf)</td>
+<td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs)</td>
+</tr>
 </tbody>
 </table>
 
@@ -68,6 +83,9 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 Homework Assignments are submitted through [TEACH](http://engr.oregonstate.edu/teach) *as well as* a printed copy submitted in class. Log in and click "Submit Assignment" in the navigation bar on the right, located under "Class Tools." You should see a list of currently open submissions.
 
 Note that due to logistical issues **late homework will not be accepted**. Please be sure to submit your assignments on time.
+
+  * [Homework #1](homework/hw1.html) --- due: June 28, 15:59
+  * [Homework #2](homework/hw2.html) --- due: July 7, 15:59
 
 ## Use of Piazza {#piazza}
 
@@ -97,6 +115,8 @@ Grades will be computed using the following weights. Each student's lowest quiz 
  * 20% Homework
  * 25% Midterm exam
  * 35% Final exam
+
+For **90%** or more, you will receive an **"A"**; for less than **30%** you will receive an **"F"**. The remaining grades are assigned linearly in between. I might lift grades if clustering of points achieved by students suggests so, but I won't assign grades worse than indicated by the above linear schema). For those who are too lazy to do the calculations, you can look up the grades on [this table](files/grading_schema.pdf).
 
 All **quizzes and exams** are closed book and closed notes. Quizzes will be held on Mondays, and exams will be held on Thursdays -- there is no specified finals schedule for Summer term so the final will be held during the **last class meeting of the term**.
 
