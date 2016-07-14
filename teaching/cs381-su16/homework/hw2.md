@@ -111,7 +111,7 @@ The syntax of the MiniLogo language is defined by the following grammar:
 Digital circuits can be built using the following four basic types of logical gates.
 
 <div style="text-align: center">
-<img style=width: 400px" src="../images/Gates.png" alt="Logical gate types">
+<img style="width: 400px" src="../images/Gates.png" alt="Logical gate types">
 </div>
 
 The syntax of the Digital Circuit Design Language is defined by the following grammar:
@@ -131,7 +131,7 @@ The syntax of the Digital Circuit Design Language is defined by the following gr
 Notice that the logical gates as well as their input/output ports are identified by numbers. The inputs of a gate are numbered *from top to bottom*, starting from `1`. The output is always numbered `0`. Consider the following circuit -- a half adder.
 
 <div style="text-align: center">
-<img style=width: 400px" src="../images/HalfAdder.png" alt="Half adder circuit">
+<img style="width: 400px" src="../images/HalfAdder.png" alt="Half adder circuit">
 </div>
 
 This circuit can be defined by the following Digital Circuit Design Language program.

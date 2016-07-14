@@ -73,7 +73,17 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <tr>
 <td class="slides-date">Jun 28</td>
 <td class="slides-title">[Semantics](lecture_slides/3_semantics.pdf)</td>
-<td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs)</td>
+<td class="slides-files">[ExprSem.hs](code/ExprSem.hs), [BoolSem.hs](code/BoolSem.hs), [Move.hs](code/Move.hs), [IntBool.hs](code/IntBool.hs), [LetSem.hs](code/LetSem.hs), [RegCalc.hs](code/RegCalc.hs), [PixelS.hs](code/PixelS.hs)</td>
+</tr>
+<tr>
+<td class="slides-date">Jul 6</td>
+<td class="slides-title">[Types](lecture_slides/4_types.pdf)</td>
+<td class="slides-files">[IntBoolT.hs](code/IntBoolT.hs), [PairT.hs](code/PairT.hs), [LetT.hs](code/LetT.hs), [StackT.hs](code/StackT.hs), [GeoLangT.hs](code/GeoLangT.hs)</td>
+</tr>
+<tr>
+<td class="slides-date">Jul 13</td>
+<td class="slides-title">[Scope and Parameter Passing](lecture_slides/5_scopeParameters.pdf)</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -86,6 +96,7 @@ Note that due to logistical issues **late homework will not be accepted**. Pleas
 
   * [Homework #1](homework/hw1.html) --- due: June 28, 15:59
   * [Homework #2](homework/hw2.html) --- due: July 7, 15:59
+  * [Homework #3](homework/hw3.html) --- due: July 19, 15:59
 
 ## Use of Piazza {#piazza}
 
