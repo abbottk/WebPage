@@ -85,6 +85,11 @@ Slides and code examples from the lectures will be posted below. Slides will nor
 <td class="slides-title">[Scope and Parameter Passing](lecture_slides/5_scopeParameters.pdf)</td>
 <td class="slides-files">[Scope.hs](code/Scope.hs), [Trace.hs](code/Trace.hs)</td>
 </tr>
+<tr>
+<td class="slides-date">Jul 27</td>
+<td class="slides-title">[Logic Programming](lecture_slides/6_logicProgramming.pdf)</td>
+<td class="slides-files">[Imp.hs](code/Imp.hs), [Obj.hs](code/Obj.hs), [hobbits.pl](code/hobbits.pl)</td>
+</tr>
 </tbody>
 </table>
 
@@ -98,6 +103,7 @@ Note that due to logistical issues **late homework will not be accepted**. Pleas
   * [Homework #2](homework/hw2.html) --- due: July 7, 15:59
   * [Homework #3](homework/hw3.html) --- due: July 19, 15:59
   * [Homework #4](homework/hw4.html) --- due: July 28, 15:59
+  * [Homework #5](homework/hw5.html) --- due: Aug 9, 15:59
 
 ## Use of Piazza {#piazza}
 
