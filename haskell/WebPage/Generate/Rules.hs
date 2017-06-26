@@ -76,9 +76,9 @@ buildPages = do
     compileToHtml takeBaseName getResourceBody
   match "pages/*.md" $ do
     compileToHtml takeBaseName myPandocCompiler
-  match ("projects/**.html" .||. "teaching/**.html") $ do
+  match ("projects/**.html" .||. "studies/**.html" .||. "teaching/**.html") $ do
     compileToHtml dropExtension getResourceBody
-  match ("projects/**.md" .||. "teaching/**.md") $ do
+  match ("projects/**.md" .||. "studies/**.md" .||. "teaching/**.md") $ do
     compileToHtml dropExtension myPandocCompiler
   match ("projects/**.pdf" .||. "teaching/**.pdf" .||. "teaching/**.png" .||. "teaching/**.hs" .||. "teaching/**.v" .||. "teaching/**.pl") $ do
     route   idRoute

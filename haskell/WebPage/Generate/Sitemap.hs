@@ -25,11 +25,12 @@ priority url
   | isPrefixOf "/projects/" url          = 0.7
   | isPrefixOf "/teaching/" url          = 0.3
   | isPrefixOf "/teachingAssistant/" url = 0.4
-  | otherwise                            = 0.5
+  | isPrefixOf "/studies/" url           = 0.5
+  | otherwise                            = 0.6
 
 -- | Matches all pages to include.
 allPages :: Compiler [Item String]
-allPages = loadAll ("pages/*" .||. "projects/*" .||. "teaching/**" .||. "teachingAssistant/**")
+allPages = loadAll ("pages/*" .||. "projects/*" .||. "teaching/**" .||. "teachingAssistant/**" .||. "studies/**")
 
 -- | Matches all files to include.
 allFiles :: Compiler [Item CopyFile]
