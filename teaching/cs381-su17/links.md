@@ -58,5 +58,5 @@ In the last couple weeks of the course, we will use the logic programming langua
 
   * [Prolog Wikibook](https://en.wikibooks.org/wiki/Prolog) -- Another one I haven’t read, but looks like a pretty good resource.
 
-
+</br></br>
 [Back to course home page](index.html)

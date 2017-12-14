@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Access to old course web pages is restricted"
-AuthUserFile /teaching/cs381-su15/.htpasswd
-require valid-user

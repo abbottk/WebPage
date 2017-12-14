@@ -2,8 +2,8 @@
 
 Grades will be computed using the following weights. Each student's lowest quiz score will be dropped.
 
- * 25% Homework
- * 15% Quizzes (5x3%)
+ * 25% Homework (5x5%)
+ * 15% Quizzes (4x3.75%) -- 5 quizzes, lowest score dropped
  * 30% Midterm exam
  * 30% Final exam
 
@@ -15,5 +15,5 @@ Teamwork on **homework** is allowed and *encouraged*. Teams of two or three stud
 
 Note that due to logistical issues **late homework is not accepted**. Be sure to submit your assignments on time.
 
-
+</br></br>
 [Back to course home page](index.html)

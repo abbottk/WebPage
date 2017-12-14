@@ -41,5 +41,5 @@ If you are the victim of harassment in this class, there are several resources a
 
 You may also want to read OSU’s policies on [bullying](http://eoa.oregonstate.edu/bullying-policy) and on [sexual harassment and misconduct](http://eoa.oregonstate.edu/sexual-harassment-and-sexual-violence-policies).
 
-
+</br></br>
 [Back to course home page](index.html)
